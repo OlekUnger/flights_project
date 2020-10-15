@@ -1,0 +1,10 @@
+<div>
+  <div *ngFor="let flight of flights">
+    <div style="border: 1px solid black">
+      <p style="display: flex; justify-content: space-between; padding: 10px">
+        Flight Id: {{flight.id}}  {{flight.status}}
+        <button (click)="deleteFlight(flight.id)"> Delete</button>
+      </p>
+    </div>
+  </div>
+</div>
